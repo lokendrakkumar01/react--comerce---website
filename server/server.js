@@ -40,6 +40,32 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/payment', paymentRoutes);
 
+// Welcome route
+app.get('/', (req, res) => {
+    res.json({
+        message: 'ShopHub E-Commerce API',
+        developer: 'Lokendrakumar',
+        version: '1.0.0',
+        status: 'running',
+        endpoints: {
+            health: '/api/health',
+            auth: '/api/auth',
+            products: '/api/products',
+            users: '/api/users',
+            cart: '/api/cart',
+            orders: '/api/orders',
+            payment: '/api/payment',
+        },
+        documentation: 'https://github.com/lokendrakumar',
+        socialMedia: {
+            linkedin: 'https://linkedin.com/in/lokendrakumar13',
+            twitter: 'https://x.com/LokendraKu39266',
+            instagram: 'https://www.instagram.com/loke_ndrakumar123',
+            youtube: 'http://www.youtube.com/@uaacademy9629',
+        }
+    });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
     res.json({ message: 'API is running...' });

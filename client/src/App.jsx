@@ -15,6 +15,7 @@ import Signup from './pages/Signup';
 import Profile from './pages/Profile';
 import Orders from './pages/Orders';
 import Wishlist from './pages/Wishlist';
+import About from './pages/About';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMe } from './redux/slices/authSlice';
@@ -45,6 +46,7 @@ const AppContent = () => {
                         <Route path="/profile" element={<Profile />} />
                         <Route path="/orders" element={<Orders />} />
                         <Route path="/wishlist" element={<Wishlist />} />
+                        <Route path="/about" element={<About />} />
                     </Routes>
                 </main>
                 <Footer />

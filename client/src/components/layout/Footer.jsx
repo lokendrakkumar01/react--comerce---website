@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -12,18 +12,45 @@ const Footer = () => {
                         <p className="text-gray-400 mb-4">
                             Your one-stop destination for all your shopping needs. Quality products at the best prices.
                         </p>
+                        <p className="text-sm text-gray-500 mb-4">
+                            Built by <span className="text-primary-400 font-semibold">Lokendrakumar</span> - Full Stack Developer (MERN Stack)
+                        </p>
                         <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                                <FaFacebook className="w-5 h-5" />
+                            <a
+                                href="https://linkedin.com/in/lokendrakumar13"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-primary-400 transition-colors"
+                                aria-label="LinkedIn"
+                            >
+                                <FaLinkedin className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+                            <a
+                                href="https://x.com/LokendraKu39266?t=Vl5M7_gl6DIuzU2rOWyZcg&s=09"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-primary-400 transition-colors"
+                                aria-label="Twitter"
+                            >
                                 <FaTwitter className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
+                            <a
+                                href="https://www.instagram.com/loke_ndrakumar123?igsh=MTJvd3RnZzh5Y2Zrbw=="
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-primary-400 transition-colors"
+                                aria-label="Instagram"
+                            >
                                 <FaInstagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors">
-                                <FaLinkedin className="w-5 h-5" />
+                            <a
+                                href="http://www.youtube.com/@uaacademy9629"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-400 hover:text-primary-400 transition-colors"
+                                aria-label="YouTube"
+                            >
+                                <FaYoutube className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
@@ -69,6 +96,9 @@ const Footer = () => {
 
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                     <p>&copy; 2024 ShopHub. All rights reserved.</p>
+                    <p className="text-sm mt-2">
+                        Developed with ❤️ by <a href="https://linkedin.com/in/lokendrakumar13" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300">Lokendrakumar</a>
+                    </p>
                 </div>
             </div>
         </footer>
